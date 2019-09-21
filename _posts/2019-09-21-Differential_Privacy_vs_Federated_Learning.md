@@ -3,8 +3,6 @@ layout: post
 title: What's the Difference Between Differential Privacy and Federated Learning?
 ---
 
-### What’s the Difference Between Differential Privacy and Federated Learning?
-
 #### First, what are they and why does it matter?
 If Firas wanted to know what proportion of MDS students have Type A personalities, he could give a personality quiz to everyone in class and tally up the results. But if the classroom cleaner stole the pile of completed quizzes, they could figure out which quiz belonged to a particular student and maybe even sell that person's quiz to a company targeting data science students. Well, we definitely don’t want that to happen! 
 
@@ -33,15 +31,15 @@ With federated learning, data is analyzed where it's collected, and only the res
 #### Why choose one versus the other?
 It may seem like it doesn’t matter if Firas chooses to protect student privacy using differential privacy or federated learning methods since the end goal is the same, but sometimes one of the methods isn’t an option:
 
->For example, what if UBC didn’t allow instructors to collect personality quiz answers from students, but Firas desperately needed to know what percentage of the MDS class has a Type A personality? Well, he wouldn’t be able to use a differential privacy approach to collect quizzes, but he could use a federated learning approach and ask students to only tell him the results of their quizzes.
+_For example, what if UBC didn’t allow instructors to collect personality quiz answers from students, but Firas desperately needed to know what percentage of the MDS class has a Type A personality? Well, he wouldn’t be able to use a differential privacy approach to collect quizzes, but he could use a federated learning approach and ask students to only tell him the results of their quizzes._
 
 Or sometimes you might not be certain what information you’re looking for:
 
->For example, what if Firas used a federated learning approach and after he counted the number of Type A responses he realized that what he really wants to know is how many people responded _strongly agree_ to the statement “I feel over-worked”? Well, with only the results of the quizzes and not the actual responses to the questions, he may wish he had used a differential privacy approach instead.
+_For example, what if Firas used a federated learning approach and after he counted the number of Type A responses he realized that what he really wants to know is how many people responded _strongly agree_ to the statement “I feel over-worked”? Well, with only the results of the quizzes and not the actual responses to the questions, he may wish he had used a differential privacy approach instead._
 
 Or maybe there are budgetary constraints to consider:
 
->For example, what if there was a paper shortage at UBC and Firas couldn't give every student a copy of the key to calculate their own personality quiz result? A federated learning method wouldn't be an option then.
+_For example, what if there was a paper shortage at UBC and Firas couldn't give every student a copy of the key to calculate their own personality quiz result? A federated learning method wouldn't be an option then._
 
 There are many more reasons why organizations might choose one method over another, and sometimes one company can even use both.
 
